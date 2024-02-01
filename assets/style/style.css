@@ -12,8 +12,14 @@ body{
   font-family: 'PT Sans', sans-serif;
 }
 
+:root{
+  --azzurro: #0084fd;
+  --celeste: #b5ddff;
+  --violetto: #9792e4;
+}
+
 /*****************
-      RESET
+      /RESET
   *****************/
 
 
@@ -23,7 +29,7 @@ body{
 
 .container{
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1200px;
 }
 
 img{
@@ -38,6 +44,10 @@ img{
   display: flex;
 }
 
+.in-block{
+  display: inline-block;
+}
+
 li{
   list-style: none;
 }
@@ -47,7 +57,7 @@ a{
 }
 
 /*****************
-      GENERALS
+      /GENERALS
   *****************/
 
 
@@ -57,7 +67,7 @@ a{
 
 header{
   height: 80px;
-  background-color: #0084fd;
+  background-color: var(--azzurro);
 }
 
 header .container{
@@ -76,3 +86,194 @@ header .container{
 .menu nav ul li a{
   padding-right: 50px;
 }
+
+/*****************
+    /HEADER
+*****************/
+
+
+/*****************
+    MAIN
+*****************/
+
+/* Section 1 */
+#hero .container{
+  margin-top: 50px;
+}
+
+.row{
+  margin-top: 50px;
+  margin: 0 30px;
+}
+
+.row .demo{
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: var(--celeste);
+  height: 600px;
+}
+
+.row .clean{
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: var(--celeste);
+  height: 350px;
+}
+
+.col .card{
+  margin: 10px 0;
+}
+
+.card{
+  justify-content: center;
+  background-color: var(--celeste);
+  height: 350px;
+}
+/* /Section 1 */
+
+
+/* Section 2*/
+#strategic{
+  background-color: var(--violetto);
+}
+
+.planning{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.app{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+/* Section 2*/
+
+/* Section 3*/
+
+#testimonials .container .text{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.bio{
+  background-color: var(--violetto);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* /Section 3*/
+
+/* Section 4*/
+
+#benefits{
+  background-color: var(--violetto);
+}
+
+#benefits .container h1{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box{
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+/* /Section 4*/
+
+
+
+
+
+
+
+
+/*****************
+    /MAIN
+*****************/
+
+
+/***********************************
+            RESPONSIVE
+***********************************/
+
+@media screen and (min-width: 768px) {
+  .container .row{
+    display: flex;
+  }
+  
+  .row .demo{
+    width: 60%;
+  }
+  
+  .row .clean{
+    width: 40%;
+  }
+  
+  .row .col{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .row .col .card{
+    width: calc(100% / 3);
+  }
+
+  .content{
+    flex-wrap: wrap;
+    width: calc(100%/3);
+
+  }
+
+  .box{
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  #hero .container{
+    width: 1140px;
+    margin: 50px auto;
+  }
+
+  .row .demo{
+    width: 60%;
+  }
+  
+  .row .clean{
+    width: 40%;
+  }
+
+  #strategic .container{
+    display: flex;
+  }
+
+  .container .planning{
+    width: 60%;
+  }
+  
+  .container .app{
+    width: 40%;
+  }
+
+  .box
+}
+
+/***********************************
+/RESPONSIVE
+***********************************/
