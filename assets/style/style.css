@@ -16,6 +16,7 @@ body{
   --azzurro: #0084fd;
   --celeste: #b5ddff;
   --violetto: #9792e4;
+  --neropaco: #333333;
 }
 
 /*****************
@@ -221,8 +222,23 @@ header .container{
 
 #get-started .container{
   text-align: center;
+  padding: 30px;
 }
 /* /Section 6*/
+
+/* Footer*/
+
+#fot{
+  background-color: var(--neropaco);
+}
+
+#fot .container p{
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+/* /Footer*/
+
 
 
 
@@ -242,6 +258,7 @@ header .container{
 ***********************************/
 
 @media screen and (min-width: 768px) {
+
   #hero .container .row{
     display: flex;
   }
@@ -292,10 +309,6 @@ header .container{
 
 
 @media screen and (min-width: 1200px) {
-  #hero .container{
-    width: 1140px;
-    margin: 50px auto;
-  }
 
   .row .demo{
     width: 60%;
