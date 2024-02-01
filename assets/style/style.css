@@ -101,7 +101,7 @@ header .container{
   margin-top: 50px;
 }
 
-.row{
+#hero .row{
   margin-top: 50px;
   margin: 0 30px;
 }
@@ -120,11 +120,11 @@ header .container{
   height: 350px;
 }
 
-.col .card{
+#hero .col .card{
   margin: 10px 0;
 }
 
-.card{
+#hero .card{
   justify-content: center;
   background-color: var(--celeste);
   height: 350px;
@@ -181,18 +181,49 @@ header .container{
 #benefits .container h1{
   justify-content: center;
   align-items: center;
+}
+
+#benefits .row{
   flex-wrap: wrap;
 }
 
-.box{
+#benefits .col .card{
   background-color: white;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
+  flex-direction: column;
   margin: 10px;
 }
 /* /Section 4*/
+
+/* Section 5*/
+  #about-us .text{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about-us .exp{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+/* /Section 5*/
+
+/* Section 6*/
+#get-started{
+  background-color: var(--violetto);
+}
+
+#get-started .container{
+  text-align: center;
+}
+/* /Section 6*/
+
 
 
 
@@ -211,7 +242,7 @@ header .container{
 ***********************************/
 
 @media screen and (min-width: 768px) {
-  .container .row{
+  #hero .container .row{
     display: flex;
   }
   
@@ -223,24 +254,39 @@ header .container{
     width: 40%;
   }
   
-  .row .col{
+  #hero .row .col{
     display: flex;
     width: 100%;
     justify-content: center;
   }
-  
-  .row .col .card{
-    width: calc(100% / 3);
-  }
 
-  .content{
+  #hero .row .col .card{
+    display: flex;
     flex-wrap: wrap;
-    width: calc(100%/3);
-
+    width: 100%;
   }
 
-  .box{
+
+  #benefits .row{
+    flex-wrap: wrap;
   }
+
+  #benefits .col{
+    width: 50%;
+  }
+
+  #about-us .row{
+    display: flex;  
+  }
+
+  #about-us .text{
+    width: 60%;
+  }
+
+  #about-us .exp{
+    width: 40%;
+  }
+
 }
 
 
@@ -271,7 +317,13 @@ header .container{
     width: 40%;
   }
 
-  .box
+  #benefits .row{
+    flex-wrap: wrap;
+  }
+
+  #benefits .col{
+    width: calc(100%/3);
+  }
 }
 
 /***********************************
