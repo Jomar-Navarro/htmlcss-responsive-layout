@@ -684,11 +684,18 @@ header .container{
 
   #strategic .planning{
     width: 50%;
-    height: 100%;
+  }
+
+  #strategic .app img{
+    object-fit: contain;
+    height: 40%;
   }
 
   #strategic .app{
-    width: 30%;
+    width: 35%;
+    height: 500px;
+    justify-content: end;
+    margin-top: 200px;
   }
 
   #testimonials .bio span{
