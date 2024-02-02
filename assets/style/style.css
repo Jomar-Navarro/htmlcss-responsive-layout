@@ -18,6 +18,8 @@ body{
   --violetto: #9792e4;
   --neropaco: #333333;
   --grigio: #5d7183;
+  --biancastro: #cac8f1;
+  --giallino: #fdc15f;
 }
 
 /*****************
@@ -306,14 +308,14 @@ header .container{
 .bio p:nth-child(2){
   color: white;
   font-size: 1.2rem;
-  padding: 0px 10px;
+  padding: 10px 10px;
   line-height: 30px;
 }
 
 .bio span{
   color: white;
   font-size: 1.5rem;
-  padding: 30px 10px;
+  padding: 10px 10px;
   font-weight: 600;
   flex-direction: column;
 }
@@ -330,6 +332,10 @@ header .container{
 #benefits .container h1{
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 50px 0;
 }
 
 #benefits .row{
@@ -339,25 +345,113 @@ header .container{
 #benefits .col .card{
   background-color: white;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   flex-direction: column;
-  margin: 10px;
+  margin: 30px;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+#benefits .number{
+  color: var(--violetto);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#benefits h4{
+  color: var(--violetto);
+  font-size: 1.6rem;
+  padding: 20px 0;
+}
+
+#benefits p{
+  color: var(--grigio);
+  line-height: 30px;
+}
+
+#benefits button{
+  border: none;
+  text-align: left;
+  padding: 30px 0;
+}
+
+#benefits button a{
+  background-color: var(--violetto);
+  padding: 10px 50px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.2rem;
 }
 /* /Section 4*/
 
 /* Section 5*/
   #about-us .text{
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     flex-direction: column;
-    text-align: center;
+    margin: 30px;
+  }
+
+  #about-us .text h2{
+    color: var(--violetto);
+    font-size: 2.5rem;
+    padding: 20px 0;
+  }
+
+  #about-us .text p:nth-child(2){
+    line-height: 30px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+  }
+
+  #about-us .text p:nth-child(3){
+    line-height: 40px;
+    font-size: 1.2rem;
   }
 
   #about-us .exp{
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     flex-direction: column;
-    text-align: center;
+    margin-top: 30px;
+    margin: 30px;
+  }
+  
+  #about-us img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px;
+  }
+
+  #about-us .virgolette i{
+    position: absolute;
+    margin: 20px 180px;
+    z-index: 999;
+    font-size: 4rem;
+    color: var(--violetto);
+  }
+
+  #about-us .virgolette img{
+    position: relative;
+  }
+
+  #about-us h2{
+    color: var(--violetto);
+    font-size: 2rem;
+  }
+
+  #about-us button{
+    border: none;
+    align-items: left;
+    justify-content: left;
+    padding: 20px 0;
+  }
+
+  #about-us button a{
+    background-color: var(--violetto);
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
   }
 
 
@@ -372,6 +466,60 @@ header .container{
   text-align: center;
   padding: 30px;
 }
+
+#get-started .container p:nth-child(1){
+  color: var(--biancastro);
+  font-size: 1.3rem;
+}
+
+#get-started .container h3{
+  font-size: 2rem;
+  color: white;
+  padding: 20px;
+}
+
+#get-started .container h2{
+  font-size: 4rem;
+  color: var(--giallino);
+}
+
+#get-started .container p:nth-child(4){
+  color: var(--biancastro);
+  line-height: 30px;
+}
+
+#get-started button{
+  border: none;
+  align-items: left;
+  justify-content: left;
+  padding: 20px 0;
+  border-radius: 50px;
+  margin: 30px 0;
+}
+
+#get-started button a{
+  padding: 30px 80px;
+  color: var(--violetto);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#get-started .container p:nth-child(6){
+  color: white;
+}
+
+#get-started .container p:nth-child(6) i{
+  font-size: 5px;
+  vertical-align: middle;
+}
+
+#get-started .container span{
+  text-decoration: underline;
+}
+
+
+
+
 /* /Section 6*/
 
 /* Footer*/
