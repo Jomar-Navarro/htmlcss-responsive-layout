@@ -559,6 +559,11 @@ header .container{
   padding: 20px 0;
   color: white;
 }
+
+#fot p:nth-child(2) a{
+  color: var(--violetto);
+  text-decoration: underline;
+}
 /* /Footer*/
 
 
@@ -716,12 +721,6 @@ header .container{
   #benefits .col{
     width: calc(100%/3);
   }
-
-
-
-
-
-
 }
 
 /***********************************
