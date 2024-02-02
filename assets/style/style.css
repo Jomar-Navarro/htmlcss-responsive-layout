@@ -57,9 +57,6 @@ img{
   flex-wrap: nowrap;
 }
 
-.col{
-  width: 100%;
-}
 
 .in-block{
   display: inline-block;
@@ -120,10 +117,15 @@ header .container{
 /* Section 1 */
 
   #demo .row{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
   }
 
-  #demo .col:nth-child(1){
+  #demo .col{
+    margin: 0 10px;
+  }
+
+  #demo .row:nth-child(1) .col:nth-child(1){
     background-color: var(--celeste);
     margin-top: 40px;
     border-radius: 30px;
@@ -163,6 +165,30 @@ header .container{
     justify-content: center;
     align-items: center;
   }
+
+  #demo .row:nth-child(2) .col{
+    background-color: var(--celeste);
+    margin-top: 40px;
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #demo .row:nth-child(2) .col i{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--azzurro);
+    padding: 30px;
+  }
+
+  #demo .row:nth-child(2) .col p{
+    padding: 10px 30px;
+    text-align: center;
+  }
+
+  
 
   #demo .col:nth-child(1n+2){
     background-color: var(--celeste);
@@ -564,12 +590,12 @@ header .container{
 
 /* demo */
 
-  #demo .col{
-    width: calc(100% / 3);
+  #demo .row{
+    flex-wrap: nowrap;
   }
   
-  #demo .col:first-child{
-    width: calc(100% / 1.5);
+  #demo .row:nth-child(1) .col:nth-child(1n+2){
+    width: calc(100% / 1);
   }
 
   #demo .col .image{
