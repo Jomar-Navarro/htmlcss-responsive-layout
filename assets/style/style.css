@@ -21,7 +21,6 @@ body{
   --biancastro: #cac8f1;
   --giallino: #fdc15f;
 }
-
 /*****************
       /RESET
   *****************/
@@ -30,7 +29,6 @@ body{
 /*****************
       GENERALS
   *****************/
-
 .container{
   margin: 0 auto;
   width: 100%;
@@ -56,7 +54,6 @@ img{
 .f-nowrap{
   flex-wrap: nowrap;
 }
-
 
 .in-block{
   display: inline-block;
@@ -90,7 +87,6 @@ a{
   flex-direction: column;
 }
 
-
 .font-onetwo{
   font-size: 1.2rem;
 }
@@ -99,15 +95,16 @@ a{
   font-size: 1.5rem;
 }
 
+.line-height{
+  line-height: 30px;
+}
 /*****************
       /GENERALS
   *****************/
 
-
 /*****************
     HEADER
 *****************/
-
 header{
   height: 80px;
   background-color: var(--azzurro);
@@ -124,9 +121,6 @@ header .container{
 .menu{
   display: none;
 }
-
-
-
 /*****************
     /HEADER
 *****************/
@@ -135,9 +129,7 @@ header .container{
 /*****************
     MAIN
 *****************/
-
 /* Section 1 */
-
   #demo .row:nth-child(2){
     margin-bottom: 50px;
   }
@@ -153,7 +145,6 @@ header .container{
   }
 
   #demo .text{
-    line-height: 30px;
     padding: 40px;
   }
   
@@ -195,13 +186,10 @@ header .container{
     padding: 10px 30px;
   }
 
-  
-
   #demo .col:nth-child(1n+2){
     background-color: var(--celeste);
     margin-top: 40px;
     border-radius: 30px;
-    text-align: center;
   }
 
   #demo .col:nth-child(1n+2) i{
@@ -213,7 +201,6 @@ header .container{
   #demo .col:nth-child(1n+2) p{
     padding: 10px 30px;
   }
-
 /* /Section 1 */
 
 
@@ -240,7 +227,6 @@ header .container{
 #strategic .planning p{
   color: white;
   text-align: left;
-  line-height: 30px;
 }
 
 .planning{
@@ -266,7 +252,6 @@ header .container{
 #strategic .app p{
   font-style: italic;
   width: 70%;
-  line-height: 30px;
 }
 
 #strategic .app button{
@@ -284,7 +269,6 @@ header .container{
 /* Section 2*/
 
 /* Section 3*/
-
 #testimonials .container .text{
   margin: 30px;
 }
@@ -296,10 +280,6 @@ header .container{
 #testimonials .text h1{
   font-size: 3rem;
   color: var(--violetto);
-}
-
-#testimonials .text p:nth-child(3){
-  line-height: 30px;
 }
 
 .bio{
@@ -319,7 +299,6 @@ header .container{
 .bio p:nth-child(2){
   color: white;
   padding: 10px 10px;
-  line-height: 30px;
 }
 
 .bio span{
@@ -327,12 +306,9 @@ header .container{
   padding: 10px 10px;
   font-weight: 600;
 }
-
-
 /* /Section 3*/
 
 /* Section 4*/
-
 #benefits{
   background-color: var(--violetto);
 }
@@ -365,7 +341,6 @@ header .container{
 
 #benefits p{
   color: var(--grigio);
-  line-height: 30px;
 }
 
 #benefits button{
@@ -447,8 +422,6 @@ header .container{
     border-radius: 30px;
     color: white;
   }
-
-
 /* /Section 5*/
 
 /* Section 6*/
@@ -477,7 +450,6 @@ header .container{
 
 #get-started .container p:nth-child(4){
   color: var(--biancastro);
-  line-height: 30px;
 }
 
 #get-started button{
@@ -507,14 +479,9 @@ header .container{
 #get-started .container span{
   text-decoration: underline;
 }
-
-
-
-
 /* /Section 6*/
 
 /* Footer*/
-
 #fot{
   background-color: var(--neropaco);
 }
@@ -530,7 +497,6 @@ header .container{
 }
 /* /Footer*/
 
-
 /*****************
     /MAIN
 *****************/
@@ -541,7 +507,6 @@ header .container{
 ***********************************/
 
 @media screen and (min-width: 768px) {
-
   .container{
     width: 720px;
   }
@@ -566,8 +531,6 @@ header .container{
     width: 70%;
   }
 /* demo */
-
-
   #testimonials .bio .row .col{
     display: flex;
     align-items: center;
@@ -598,10 +561,7 @@ header .container{
   #about-us .exp{
     width: 40%;
   }
-
 }
-
-
 
 @media screen and (min-width: 1200px) {
   .container{
@@ -681,7 +641,6 @@ header .container{
     width: calc(100%/3);
   }
 }
-
 /***********************************
 /RESPONSIVE
 ***********************************/
