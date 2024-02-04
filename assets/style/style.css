@@ -98,6 +98,10 @@ a{
 .line-height{
   line-height: 30px;
 }
+
+.b-radius{
+  border-radius: 30px;
+}
 /*****************
       /GENERALS
   *****************/
@@ -112,6 +116,7 @@ header{
 
 header .container{
   height: 100%;
+  padding: 0 20px;
 }
 
 .hamb{
@@ -135,13 +140,14 @@ header .container{
   }
 
   #demo .col{
+    background-color: var(--celeste);
+    margin-top: 40px;
     margin: 0 10px;
   }
 
-  #demo .row:nth-child(1) .col:nth-child(1){
+  #demo .row:nth-child(1) .col{
     background-color: var(--celeste);
-    margin-top: 40px;
-    border-radius: 30px;
+    margin-top: 50px;
   }
 
   #demo .text{
@@ -155,12 +161,12 @@ header .container{
   #demo .col p{
     color: var(--grigio);
     padding-top: 20px;
+    font-weight: 600;
   }
   
   #demo .col button{
     background-color: var(--azzurro);
     border: none;
-    border-radius: 30px;
     padding: 10px 20px;
     margin-top: 20px;
   }
@@ -173,7 +179,6 @@ header .container{
   #demo .row:nth-child(2) .col{
     background-color: var(--celeste);
     margin-top: 40px;
-    border-radius: 30px;
   }
 
   #demo .row:nth-child(2) .col i{
@@ -186,19 +191,13 @@ header .container{
     padding: 10px 30px;
   }
 
-  #demo .col:nth-child(1n+2){
-    background-color: var(--celeste);
-    margin-top: 40px;
-    border-radius: 30px;
-  }
-
-  #demo .col:nth-child(1n+2) i{
+  #demo .col:nth-child(2) i{
     font-size: 5rem;
     color: var(--azzurro);
     padding: 30px;
   }
 
-  #demo .col:nth-child(1n+2) p{
+  #demo .col:nth-child(2) p{
     padding: 10px 30px;
   }
 /* /Section 1 */
@@ -303,7 +302,7 @@ header .container{
 
 .bio span{
   color: white;
-  padding: 10px 10px;
+  padding: 30px 10px;
   font-weight: 600;
 }
 /* /Section 3*/
@@ -522,13 +521,18 @@ header .container{
   #demo .row{
     flex-wrap: nowrap;
   }
+
+  #demo .row:nth-child(1){
+    height: 50%;
+  }
   
-  #demo .row:nth-child(1) .col:nth-child(1n+2){
-    width: calc(100% / 1);
+  #demo .row:nth-child(1) .col:nth-child(2){
+    width: calc(100% / 1.15);
   }
 
   #demo .col .image{
-    width: 70%;
+    width: 60%;
+    min-height: fit-content;
   }
 /* demo */
   #testimonials .bio .row .col{
@@ -591,18 +595,25 @@ header .container{
     font-size: 1rem;
   }
   /* demo */
-  .menu button{
-    border: none;
-    border-radius: 15px;
-  }
-
   #demo .col{
     display: flex;
     flex-wrap: nowrap;
   }
 
+  #demo .row:nth-child(1) .col:nth-child(2){
+    width: calc(100% / 1.14);
+  }
+
+  .menu button{
+    border: none;
+    border-radius: 15px;
+  }
+
+
   #demo .col .image{
     align-items: end;
+    padding-right: 50px;
+    width: 90%;
   }
   /* demo */
 
